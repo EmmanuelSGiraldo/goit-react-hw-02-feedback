@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 80px;
 }
 
 .optionButton {
@@ -15,7 +16,7 @@
 }
 
 .optionButton:hover {
-  background-color: #dcdcdc;
+  background-color: #56f202;
 }
 
 .optionButton:focus {
