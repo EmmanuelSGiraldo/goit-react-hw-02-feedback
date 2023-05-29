@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './scss/Statistics.module.scss';
 
 const Statistics = ({
   good,
@@ -9,11 +10,11 @@ const Statistics = ({
   positivePercentage
 }) => (
   <div>
-    <p>Good: {good}</p>
-    <p>Neutral: {neutral}</p>
-    <p>Bad: {bad}</p>
-    <p>Total: {total}</p>
-    <p>Positive Feedback: {positivePercentage}%</p>
+    <p className={styles['statistics-item']}>Good: {good}</p>
+    <p className={styles['statistics-item']}>Neutral: {neutral}</p>
+    <p className={styles['statistics-item']}>Bad: {bad}</p>
+    <p className={styles['statistics-item']}>Total: {total}</p>
+    <p className={styles['statistics-item']}>Positive Feedback: {positivePercentage}%</p>
   </div>
 );
 

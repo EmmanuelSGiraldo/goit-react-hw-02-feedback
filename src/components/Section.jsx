@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './scss/Section.module.scss';
 
-const Section = ({title, children}) => (
-  <div>
-    <h2>{title}</h2>
-    {children} </div>
+const Section = ({ title, children }) => (
+  <div className={styles.section}>
+    <h2 className={styles.title}>{title}</h2>
+    {children}
+  </div>
 );
 
 Section.propTypes = {
