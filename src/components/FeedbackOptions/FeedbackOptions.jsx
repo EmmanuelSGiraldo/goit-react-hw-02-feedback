@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './scss/FeedbackOptions.module.scss';
+import styles from './FeedbackOptions.module.scss';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => (
   <div className={styles.feedbackOptions}>
@@ -8,7 +8,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => (
       <button
         key={option}
         onClick={() => onLeaveFeedback(option)}
-        className={styles.optionButton}
+        className={styles.feedbackButton}
       >
         {option}
       </button>
