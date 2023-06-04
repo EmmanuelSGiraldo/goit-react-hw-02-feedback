@@ -9,12 +9,12 @@ class App extends Component {
   state = {
     good: 0,
     neutral: 0,
-    bad: 0
+    bad: 0,
   };
 
-  handleFeedback = (type) => {
-    this.setState((prevState) => ({
-      [type]: prevState[type] + 1
+  handleFeedback = type => {
+    this.setState(prevState => ({
+      [type]: prevState[type] + 1,
     }));
   };
 

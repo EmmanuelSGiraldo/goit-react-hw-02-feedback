@@ -4,13 +4,7 @@ import styles from './Statistics.module.scss';
 
 class Statistics extends Component {
   render() {
-    const {
-      good,
-      neutral,
-      bad,
-      total,
-      positivePercentage
-    } = this.props;
+    const { good, neutral, bad, total, positivePercentage } = this.props;
 
     return (
       <div>
@@ -18,7 +12,9 @@ class Statistics extends Component {
         <p className={styles['statistics-item']}>Neutral: {neutral}</p>
         <p className={styles['statistics-item']}>Bad: {bad}</p>
         <p className={styles['statistics-item']}>Total: {total}</p>
-        <p className={styles['statistics-item']}>Positive Feedback: {positivePercentage}%</p>
+        <p className={styles['statistics-item']}>
+          Positive Feedback: {positivePercentage}%
+        </p>
       </div>
     );
   }
@@ -29,7 +25,7 @@ Statistics.propTypes = {
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
-  positivePercentage: PropTypes.number.isRequired
+  positivePercentage: PropTypes.number.isRequired,
 };
 
 export default Statistics;

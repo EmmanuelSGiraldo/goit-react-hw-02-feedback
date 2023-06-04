@@ -8,7 +8,7 @@ class FeedbackOptions extends Component {
 
     return (
       <div className={styles.feedbackOptions}>
-        {options.map((option) => (
+        {options.map(option => (
           <button
             key={option}
             onClick={() => onLeaveFeedback(option)}
