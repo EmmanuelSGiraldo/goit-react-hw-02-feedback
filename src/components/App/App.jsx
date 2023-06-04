@@ -53,6 +53,7 @@ class App extends Component {
             <Notification message="There is no feedback" />
           )}
         </Section>
+        <h2>Designed by Emmanuel S Giraldo</h2>
       </div>
     );
   }
